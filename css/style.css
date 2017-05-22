@@ -217,7 +217,7 @@ p {
 }
 
 .footer {
-  line-height: normal;
+  line-height: 10px;
   position: absolute;
   bottom: 0;
   display: -webkit-box;
