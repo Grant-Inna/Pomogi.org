@@ -260,6 +260,11 @@ p {
 @media screen and (min-width: 560px) and (orientation: landscape) {
   /* iPhone 5 landscape · width: 568px */
 
+  html,
+  body {
+    position: fixed;
+  }
+
   .main__info {
     display: none;
   }
