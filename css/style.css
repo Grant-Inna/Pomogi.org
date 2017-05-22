@@ -280,11 +280,11 @@ p {
   /* iPhone 6 portrait – width: 375px */
 
   .wrapper {
-    height: 90%;
+    height: 86%;
   }
 
   .footer {
-    height: 10%;
+    height: 14%;
   }
 
   .main__info {
