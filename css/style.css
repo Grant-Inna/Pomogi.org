@@ -263,6 +263,8 @@ p {
   html,
   body {
     position: fixed;
+    height: 320px;
+    width: 568px;
   }
 
   .main__info {
