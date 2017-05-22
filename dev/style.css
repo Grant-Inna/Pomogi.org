@@ -42,78 +42,64 @@ p
 
     content: '';
 }
-.wrapper
+.container
 {
     font-family: Arial,sans-serif;
     font-size: 1em;
-    line-height: 12px;
+    line-height: 1.42;
 
     position: relative;
 
     overflow: hidden;
 
     width: 100%;
-    min-height: 100%;
+    height: 100%;
+    /*background: rgb(122,188,255);
+    background: linear-gradient(to bottom, rgba(122,188,255,.8) 0%,rgba(147,179,221,1) 47%,rgba(255,255,255,1) 100%);
+    background-size: cover;*/
 
     background: white url(../img/bg.gif) repeat-x;
+
+    /*  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#ffffff',GradientType=0 );*/
 }
-.wrapper__inner
+.wrapper
 {
     position: relative;
 
-    display: table;
+    display: flex;
+    flex-direction: column;
 
     width: 100%;
-    height: 100%;
+    height: 85%;
 
     background-size: cover;
-}
-.wrapper__btn
-{
-    display: inline-block;
 
-    padding: 3px 5px;
-
-    vertical-align: middle;
-
-    color: gray;
-    border: none;
-    border-radius: 7px;
-    outline: none;
-    background-color: transparent;
+    justify-content: space-between;
 }
 .header
 {
-    height: auto;
+    display: flex;
+
+    height: 10%;
 
     background: rgba(255, 255, 255, .7);
     box-shadow: 2px 5px 9px 2px rgba(0, 0, 0, .12);
-}
-.header__inner
-{
-    display: flex;
 
     align-items: center;
     justify-content: center;
 }
-.header__col
-{
-    margin: 0 auto;
-}
-.header__col-logo
-{
-    width: 40%;
-}
 
 .header__logo
 {
-    /*
-    background: url('../img/logo-bg.gif') no-repeat;
-    background-size: contain;*/
+    width: 40%;
+    height: 100%;
+
+    background: url('../img/logo.gif') left no-repeat;
+    background-size: contain;
 }
 .header__img
 {
-    width: 40%;
+    width: 75%;
 }
 .header__title
 {
@@ -138,10 +124,6 @@ p
 
     background-size: cover;
 }
-.main__inner
-{
-    display: table-cell;
-}
 
 /*                 MAIN INFO                       */
 
@@ -164,19 +146,6 @@ p
 .main__totals
 {
     display: none;
-
-    width: 100%;
-    height: 215px;
-
-    border-radius: 80px;
-    background: url('../img/info2016.jpg') bottom no-repeat;
-    background-size: contain;
-}
-.main__totals-h
-{
-    text-align: center;
-
-    color: #2b2b2b;
 }
 .main__about
 {
@@ -194,8 +163,6 @@ p
 }
 .main__thanks
 {
-    display: none;
-
     width: auto;
     height: 20px;
 
@@ -255,13 +222,10 @@ p
 {
     line-height: 10px;
 
-    position: absolute;
-    bottom: 0;
-
     display: flex;
 
     width: 100%;
-    height: auto;
+    height: 15%;
 
     text-align: center;
 
@@ -276,7 +240,7 @@ p
     display: none;
 }
 
-@media screen and (min-width: 560px) and (orientation: landscape)
+@media screen and (min-width: 560px)
 {
     /* iPhone 5 landscape · width: 568px */
     .main__info
@@ -290,10 +254,6 @@ p
     .header__title
     {
         width: 55%;
-    }
-    .button
-    {
-        height: 100px;
     }
 }
 @media screen and (min-width: 370px)
