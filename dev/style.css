@@ -276,7 +276,7 @@ p
     display: none;
 }
 
-@media screen and (min-width: 560px)
+@media screen and (min-width: 560px) and (orientation: landscape)
 {
     /* iPhone 5 landscape · width: 568px */
     .main__info
