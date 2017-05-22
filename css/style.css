@@ -271,6 +271,10 @@ p {
   .header__title {
     width: 55%;
   }
+
+  .button {
+    height: 110px;
+  }
 }
 
 @media screen and (min-width: 660px) {
