@@ -40,16 +40,12 @@ p {
 .wrapper {
   font-family: Arial,sans-serif;
   font-size: 1em;
-  line-height: 1.42;
+  line-height: 12px;
   position: relative;
   overflow: hidden;
   width: 100%;
   min-height: 100%;
-  /*background: rgb(122,188,255);
-    background: linear-gradient(to bottom, rgba(122,188,255,.8) 0%,rgba(147,179,221,1) 47%,rgba(255,255,255,1) 100%);
-    background-size: cover;*/
   background: white url(../img/bg.gif) repeat-x;
-  /*  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#ffffff',GradientType=0 );*/
 }
 
 .wrapper__inner {
@@ -108,7 +104,7 @@ p {
 }
 
 .header__img {
-  width: 75%;
+  width: 40%;
 }
 
 .header__title {
