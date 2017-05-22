@@ -291,6 +291,10 @@ p
     {
         width: 55%;
     }
+    .button
+    {
+        height: 100px;
+    }
 }
 @media screen and (min-width: 370px)
 {
