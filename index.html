@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Pomogi.org</title>
+	<meta name="description" content="">
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript">if (top === self) { } else { window.top.location = self.location; }</script>
+</head>
+<body>	
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__inner">
+				<div class="header__logo">
+					<img src="img/logo.gif" alt="logo" class="header__img">
+				</div>
+				<div class="header__title">
+					<h1 class="header__title-h">Благотворительный интернет–фонд</h1>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__inner">
+
+				<div class="main__slogan">
+					<h2 class="main__slogan-h">Объединяем усилия людей для максимально эффективной помощи</h2>
+				</div>
+				<div class="main__info">
+					<div class="main__totals">
+						<h3 class="totals__title">ИТОГИ 2016 года</h3>
+					</div>
+					<div class="main__about">
+						<p class="main__topic">Фонд оказывает помощь нуждающимся независимо от их возраста, заболевания, места регистрации и гражданства. Благодаря нашим жертвователям
+							<a href="http://pomogi.org/success/">сотни людей</a> смогли получить жизненно важную помощь и поддержку</p>
+						<p class="main__topic">Всю <a href="http://pomogi.org/report-old/">отчетность</a> о собранных и распределенных средствах вы можете найти на сайте. Каждый жертвователь может проконтролировать, на что пошли переданные им деньги. Мы оперативно информируем пользователей как о ходе сбора средств, так и о результатах лечения или другой помощи</p>
+					</div>
+				</div>
+				<div class="main__thanks">
+					<h3 class="main__thanks-h">Спасибо всем, кто помогает!</h3>
+				</div>
+
+
+
+
+
+
+				<div class="button" id="buttons">
+					<button class="button__btn" onclick="document.getElementById('subscr-form').submit();return false;">
+						Пожертвовать
+					</button>
+					<div class="button__price">
+						Пожертвование составит 4 рубля в день
+					</div>
+				</div>
+
+			</div>
+		</main>
+
+		<footer class="footer" id="footer">
+			<div class="hide__content">
+				<!--END HEADER-->
+				<div id="template-caption-pilot">
+					<span style="font-family:Arial !important;font-size:10px !important; ">
+						Стоимость 4 руб. с НДС за 1 день с основного счета МТС +7XXXXXXXXXX. Нажатием кнопки «<span id="template-button-name-pilot">Пожертвовать</span>»
+						вы осуществляете заказ доступа к услуге «http://pomogi.org/», подтверждаете ознакомление и согласие с условиями его предоставления,
+						<a href="http://static.mts.ru/uploadmsk/contents/1655/poryadok_predostavl_uslug_feb2013.pdf">Порядком предоставления контентных
+							услуг ПАО «МТС»</a>, <a href="offer.html">правилами оказания услуги</a> контент-провайдером  Стрим, ООО. Оказывается МТС с привлечением  Стрим, ООО.
+						</span>
+					</div>
+					<!--START FOOTER--> 
+				</div>
+				<p class="footer__text-block" id="trig-footer"></p>
+			</footer>
+		</div>
+
+		<script>
+			document.getElementById('template-button-name-pilot').innerHTML = "Пожертвовать";
+
+			var mts_info_block = document.getElementById('template-caption-pilot').innerHTML;
+			document.getElementById('trig-footer').innerHTML =  mts_info_block;
+
+			var bottombar = document.getElementById('footer');		
+
+			function iOSversion() {
+				if ( (/iP(hone|od|ad)/.test(navigator.platform)) && (navigator.appVersion.match(/Safari/i)) ) {
+					var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
+					return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
+				} else { return false; }
+			}
+
+			ver = iOSversion();
+
+			if ((navigator.vendor.indexOf('Apple') > -1) && (!navigator.userAgent.match('CriOS'))) {
+				if ( (ver[0] >= 10) && (ver[1] >= 3 ) ) {
+					// alert('This is running iOS 10.3.1 or later.');
+					window.addEventListener("orientationchange", function() {
+						document.ontouchmove = function (e) {
+							return true;
+						}
+
+						if (window.matchMedia("(orientation: landscape)").matches) {
+							bottombar.style.bottom = 0;
+							window.onscroll = function() {
+
+								var oldWindowHeight = window.screen.width;
+								var windowHeight = window.innerHeight;
+
+								if ( oldWindowHeight > windowHeight ) {
+									bottombar.style.bottom = "11.5%";
+									document.ontouchmove = function (e) {
+										e.preventDefault();
+									}
+								}
+							}
+						}
+					}, false);
+
+					if (window.matchMedia("(orientation: landscape)").matches) {
+
+						document.ontouchmove = function (e) {
+							e.preventDefault();
+						}
+						bottombar.style.bottom = "11.5%";
+					}					
+				}
+			}
+		</script>	
+	</body>
+	</html>
