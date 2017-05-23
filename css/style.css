@@ -483,6 +483,10 @@ p {
     width: 60%;
   }
 
+  .main__totals {
+    width: 35%;
+  }
+
   .main__thanks {
     display: none;
   }
