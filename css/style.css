@@ -216,7 +216,7 @@ p {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 120px;
+  height: 100px;
   text-align: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -231,7 +231,7 @@ p {
 .button__btn {
   font-size: 22px;
   width: 80%;
-  height: 40%;
+  height: 50%;
   cursor: pointer;
   text-transform: uppercase;
   color: #fff;
