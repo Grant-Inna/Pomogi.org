@@ -324,15 +324,19 @@ p {
   /* iPhone 5 landscape – width: 568px */
 
   .wrapper {
-    height: 84%;
+    height: 82%;
   }
 
   .footer {
-    height: 16%;
+    height: 18%;
   }
 
   .header {
     height: 30%;
+  }
+
+  .main__slogan {
+    width: 100%;
   }
 
   .main__info {

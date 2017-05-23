@@ -308,7 +308,7 @@ p
 @media screen and (min-width: 560px)
 {
     /* iPhone 5 landscape – width: 568px */
-    $footerHeight: 16%;
+    $footerHeight: 18%;
     $wrapperHeight: (100% - $footerHeight);
     .wrapper
     {
@@ -321,6 +321,10 @@ p
     .header
     {
         height: 30%;
+    }
+    .main__slogan
+    {
+        width: 100%;
     }
     .main__info
     {
