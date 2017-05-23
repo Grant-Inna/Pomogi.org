@@ -124,7 +124,7 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 80%;
+  height: 100%;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
