@@ -84,7 +84,7 @@ p
 {
     display: flex;
 
-    height: 10%;
+    height: 20%;
 
     background: rgba(255, 255, 255, .7);
     box-shadow: 2px 5px 9px 2px rgba(0, 0, 0, .12);
@@ -308,7 +308,7 @@ p
 @media screen and (min-width: 560px)
 {
     /* iPhone 5 landscape – width: 568px */
-    $footerHeight: 14%;
+    $footerHeight: 16%;
     $wrapperHeight: (100% - $footerHeight);
     .wrapper
     {
@@ -320,7 +320,7 @@ p
     }
     .header
     {
-        height: 25%;
+        height: 30%;
     }
     .main__info
     {
