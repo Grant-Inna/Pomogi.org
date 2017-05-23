@@ -509,6 +509,12 @@ p {
   }
 }
 
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .button {
+    margin-bottom: 40px;
+  }
+}
+
 @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   /* IPhone 5 ONLY landscape */
 
