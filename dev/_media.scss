@@ -18,12 +18,18 @@
 
     height: 60%;
   }
+  .main__about {
+    display: none;
+  }
+  .main__totals {
+    width: 90%;
+  }
   .main__thanks {
     display: none;
   }
 }
 
-@media screen and (min-width: 560px)
+@media screen and (min-width: 475px)
 {
   /* iPhone 5 landscape – width: 568px */
   $footerHeight: 20%;
@@ -107,6 +113,9 @@ and (orientation : landscape)
   .header
   {
     height: 15%;
+  }
+  .main {
+    height: 100%;
   }
   .main__info
   {
@@ -204,6 +213,9 @@ and (-webkit-min-device-pixel-ratio : 2)
     display: flex;
 
     height: 65%;
+  }
+  .main__about {
+    display: block;
   }
   .main__totals {
     width: 40%;
