@@ -277,7 +277,7 @@ p {
 }
 
 @media screen and (min-width: 370px) {
-  /* iPhone 6 portrait – width: 375px */
+  /* iPhone 6 portrait � width: 375px */
 
   .wrapper {
     height: 86%;
@@ -297,7 +297,7 @@ p {
 }
 
 @media screen and (min-width: 410px) {
-  /* iPhone 6 Plump portrait – width: 414px */
+  /* iPhone 6 Plump portrait � width: 414px */
 
   .wrapper {
     height: 90%;
@@ -321,7 +321,7 @@ p {
 }
 
 @media screen and (min-width: 560px) {
-  /* iPhone 5 landscape – width: 568px */
+  /* iPhone 5 landscape � width: 568px */
 
   .wrapper {
     height: 80%;
@@ -365,7 +365,7 @@ p {
 }
 
 @media screen and (min-width: 660px) {
-  /* iPhone 6 landscape – width: 667px */
+  /* iPhone 6 landscape � width: 667px */
 
   .wrapper {
     height: 88%;
@@ -385,11 +385,11 @@ p {
 }
 
 @media screen and (min-width: 730px) {
-  /* iPhone 6 Plump landscape – width: 736px */
+  /* iPhone 6 Plump landscape � width: 736px */
 }
 
 @media screen and (min-width: 760px) {
-  /* iPad portrait – width: 768px */
+  /* iPad portrait � width: 768px */
 
   .wrapper {
     height: 95%;
@@ -439,7 +439,7 @@ p {
 }
 
 @media screen and (min-width: 1000px) {
-  /* iPad landscape + iPad Pro portrait – width: 1024px */
+  /* iPad landscape + iPad Pro portrait � width: 1024px */
 
   .wrapper {
     height: 93%;
@@ -484,5 +484,25 @@ p {
   .container {
     width: 568px;
     height: 230px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (width: 667px) and (height: 375px) and (orientation: landscape) and (color: 8) and (device-aspect-ratio: 375 / 667) and (aspect-ratio: 667 / 375) and (device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2) {
+  /* iPhone 6 landscape ONLY */
+
+  body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .container {
+    width: 667px;
+    height: 275px;
   }
 }
