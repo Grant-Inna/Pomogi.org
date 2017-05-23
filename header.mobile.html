@@ -11,32 +11,58 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript">if (top === self) { } else { window.top.location = self.location; }</script>
 </head>
-<body>	
+<body>
+<div class="container">
 	<div class="wrapper">
 		<header class="header">
-			<div class="header__inner">
-				<div class="header__col">
-					<div class="header__logo">
-						<img src="img/logo.png" alt="logo" class="header__img">
-					</div>
-				</div>
-				<div class="header__col">
-					<div class="header__title">
-						ГОРЯЧЕЕ ВИДЕО
-					</div>
-				</div>
+			<div class="header__logo">
+			</div>
+			<div class="header__title">
+				<h1 class="header__title-h">Благотворительный интернет–фонд</h1>
 			</div>
 		</header>
 		<main class="main">
-			<div class="main__inner">
-				<div class="button" id="buttons">
-					<button class="button__btn" onclick="document.getElementById('subscr-form').submit();return false;">
-						Смотреть
-					</button>
+
+			<div class="main__slogan">
+				<h2 class="main__slogan-h">Объединяем усилия людей для максимально эффективной помощи</h2>
+			</div>
+			<div class="main__info">
+
+				<div class="main__about">
+					<h3 class="main__totals-h">О Фонде</h3>
+					<p class="main__topic">Фонд оказывает помощь нуждающимся независимо от их возраста, заболевания, места регистрации и гражданства. Благодаря нашим жертвователям
+						<a href="http://pomogi.org/success/">сотни людей</a> смогли получить жизненно важную помощь и поддержку</p>
+					<p class="main__topic">Всю <a href="http://pomogi.org/report-old/">отчетность</a> о собранных и распределенных средствах вы можете найти на сайте. Каждый жертвователь может проконтролировать, на что пошли переданные им деньги. Мы оперативно информируем пользователей как о ходе сбора средств, так и о результатах лечения или другой помощи</p>
+					<p class="main__topic hide">Фонд Помоги.Орг действует с марта 2005 года, официальную регистрацию получил в октябре того же года.
+
+						В штате фонда сейчас — <a href="http://pomogi.org/about/team/">четыре сотрудника</a>, с которыми можно познакомиться в соответствующем разделе нашего сайта.
+
+						Фонд действует на основании <a href="http://pomogi.org/about/official/">уставных документов</a>, с которыми можно ознакомиться на этом сайте.
+
+						Мы глубоко признательны всем, кто <a href="http://pomogi.org/about/help/">поддерживает</a> работу фонда.</p>
+				</div>
+
+				<div class="main__totals">
+					<h3 class="main__totals-h">ИТОГИ 2016 года</h3>
+					<div class="main__totals-img"></div>
+				</div>
+
+			</div>
+			<div class="main__thanks">
+				<h3 class="main__thanks-h">Спасибо всем, кто помогает!</h3>
+			</div>
+
+
+			<div class="button" id="buttons">
+				<button class="button__btn" onclick="document.getElementById('subscr-form').submit();return false;">
+					Пожертвовать
+				</button>
+				<div class="button__price">
+					Пожертвование составит 4 рубля в день
 				</div>
 			</div>
 		</main>
-
-		<footer class="footer" id="footer">
-			<div class="hide__content">
+	</div>
+	<footer class="footer" id="footer">
+		<div class="hide__content">
 				<!--END HEADER-->
