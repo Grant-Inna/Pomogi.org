@@ -175,7 +175,7 @@ and (-webkit-min-device-pixel-ratio : 2)
 @media screen and (min-width: 760px)
 {
   /* iPad portrait – width: 768px */
-  $footerHeight: 5%;
+  $footerHeight: 6%;
   $wrapperHeight: (100% - $footerHeight);
   .wrapper
   {
@@ -197,7 +197,7 @@ and (-webkit-min-device-pixel-ratio : 2)
   .main__slogan-h
   {
     font-size: 2.3rem;
-    margin-bottom: 9px;
+    margin-bottom: 13px;
   }
   .main__info
   {
@@ -206,7 +206,7 @@ and (-webkit-min-device-pixel-ratio : 2)
     height: 65%;
   }
   .main__totals {
-    width: 35%;
+    width: 40%;
   }
   .main__totals-h
   {
@@ -262,6 +262,9 @@ and (-webkit-min-device-pixel-ratio : 2)
   .main__info
   {
     height: 80%;
+  }
+  .main__about {
+    width: 60%;
   }
   .main__thanks
   {

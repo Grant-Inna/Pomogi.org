@@ -395,7 +395,7 @@ p {
   /* iPad portrait � width: 768px */
 
   .wrapper {
-    height: 95%;
+    height: 94%;
   }
 
   .header {
@@ -413,7 +413,7 @@ p {
 
   .main__slogan-h {
     font-size: 2.3rem;
-    margin-bottom: 9px;
+    margin-bottom: 13px;
   }
 
   .main__info {
@@ -425,7 +425,7 @@ p {
   }
 
   .main__totals {
-    width: 35%;
+    width: 40%;
   }
 
   .main__totals-h {
@@ -451,7 +451,7 @@ p {
 
   .footer {
     line-height: 15px;
-    height: 5%;
+    height: 6%;
   }
 }
 
@@ -477,6 +477,10 @@ p {
 
   .main__info {
     height: 80%;
+  }
+
+  .main__about {
+    width: 60%;
   }
 
   .main__thanks {
