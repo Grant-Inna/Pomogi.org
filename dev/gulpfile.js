@@ -35,6 +35,7 @@ gulp.task('watch_cssComb', function() {
 });
 gulp.task('watch_scss', function() {
     gulp.watch('./style.scss', ['css'])
+    gulp.watch('./_media.scss', ['css'])
 });
 gulp.task('watch_min', function() {
     gulp.watch('../css/style.css', ['MINcss'])

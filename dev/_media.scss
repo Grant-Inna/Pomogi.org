@@ -18,6 +18,9 @@
 
     height: 60%;
   }
+  .main__thanks {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 560px)
@@ -157,6 +160,7 @@ and (-webkit-min-device-pixel-ratio : 2)
   }
   .container
   {
+    margin-top: 50px;
     width: 667px;
     height: 275px;
   }
@@ -166,6 +170,7 @@ and (-webkit-min-device-pixel-ratio : 2)
 @media screen and (min-width: 730px)
 {
   /* iPhone 6 Plump landscape – width: 736px */
+
 }
 @media screen and (min-width: 760px)
 {
@@ -176,10 +181,12 @@ and (-webkit-min-device-pixel-ratio : 2)
   {
     height: $wrapperHeight;
   }
-
+  .header {
+    height: 13%;
+  }
   .header__title-h
   {
-    font-size: 3.4rem;
+    font-size: 3.1rem;
 
     text-align: center;
   }
@@ -189,7 +196,7 @@ and (-webkit-min-device-pixel-ratio : 2)
   }
   .main__slogan-h
   {
-    font-size: 2.7rem;
+    font-size: 2.3rem;
   }
   .main__info
   {
@@ -199,15 +206,20 @@ and (-webkit-min-device-pixel-ratio : 2)
   }
   .main__totals-h
   {
+    margin: 5px auto;
+
     font-size: 2.3rem;
   }
   .main__topic
   {
     font-size: 1.5rem;
   }
+  .main__thanks {
+    display: block;
+  }
   .button
   {
-    height: 150px;
+    height: 120px;
   }
   .button__btn
   {

@@ -294,6 +294,10 @@ p {
     display: flex;
     height: 60%;
   }
+
+  .main__thanks {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 410px) {
@@ -395,8 +399,12 @@ p {
     height: 95%;
   }
 
+  .header {
+    height: 13%;
+  }
+
   .header__title-h {
-    font-size: 3.4rem;
+    font-size: 3.1rem;
     text-align: center;
   }
 
@@ -405,7 +413,7 @@ p {
   }
 
   .main__slogan-h {
-    font-size: 2.7rem;
+    font-size: 2.3rem;
   }
 
   .main__info {
@@ -417,6 +425,7 @@ p {
   }
 
   .main__totals-h {
+    margin: 5px auto;
     font-size: 2.3rem;
   }
 
@@ -424,8 +433,12 @@ p {
     font-size: 1.5rem;
   }
 
+  .main__thanks {
+    display: block;
+  }
+
   .button {
-    height: 150px;
+    height: 120px;
   }
 
   .button__btn {
@@ -482,6 +495,7 @@ p {
   }
 
   .container {
+    margin-top: 50px;
     width: 568px;
     height: 230px;
   }
@@ -502,6 +516,7 @@ p {
   }
 
   .container {
+    margin-top: 50px;
     width: 667px;
     height: 275px;
   }
