@@ -39,7 +39,6 @@ a
 p
 {
     -webkit-margin-before: .3em;
-    -webkit-margin-after: .7em;
 }
 .clearfix::after,
 .clearfix::before
@@ -72,7 +71,7 @@ p
     flex-direction: column;
 
     width: 100%;
-    max-width: 1000px;
+    max-width: 1050px;
     height: $wrapperHeight;
     margin: 0 auto;
 
@@ -262,7 +261,7 @@ p
     display: flex;
 
     width: 100%;
-    max-width: 1000px;
+    max-width: 1050px;
     height: $footerHeight;
     margin: 0 auto;
 
