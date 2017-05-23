@@ -413,6 +413,7 @@ p {
 
   .main__slogan-h {
     font-size: 2.3rem;
+    margin-bottom: 9px;
   }
 
   .main__info {
@@ -423,13 +424,17 @@ p {
     height: 65%;
   }
 
+  .main__totals {
+    width: 35%;
+  }
+
   .main__totals-h {
     margin: 5px auto;
     font-size: 2.3rem;
   }
 
   .main__topic {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .main__thanks {

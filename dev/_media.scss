@@ -197,12 +197,16 @@ and (-webkit-min-device-pixel-ratio : 2)
   .main__slogan-h
   {
     font-size: 2.3rem;
+    margin-bottom: 9px;
   }
   .main__info
   {
     display: flex;
 
     height: 65%;
+  }
+  .main__totals {
+    width: 35%;
   }
   .main__totals-h
   {
@@ -212,7 +216,7 @@ and (-webkit-min-device-pixel-ratio : 2)
   }
   .main__topic
   {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   .main__thanks {
     display: block;
