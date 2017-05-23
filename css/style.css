@@ -335,6 +335,10 @@ p {
     height: 30%;
   }
 
+  .header__logo {
+    height: 80%;
+  }
+
   .main__slogan {
     width: 100%;
   }
@@ -460,5 +464,14 @@ p {
 
   .main__thanks {
     display: none;
+  }
+}
+
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  /* IPhone 5 ONLY landscape */
+
+  .container {
+    height: 230px;
+    width: 568px;
   }
 }

@@ -322,6 +322,10 @@ p
     {
         height: 30%;
     }
+    .header__logo
+    {
+        height: 80%;
+    }
     .main__slogan
     {
         width: 100%;
@@ -345,6 +349,20 @@ p
     .button__btn
     {
         height: 60%;
+    }
+}
+
+@media (device-height : 568px)
+and (device-width : 320px)
+and (-webkit-min-device-pixel-ratio: 2)
+     and (orientation : landscape)
+{
+    /* IPhone 5 ONLY landscape */
+
+    .container
+    {
+        width: 568px;
+        height: 230px;
     }
 }
 
