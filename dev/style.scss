@@ -39,7 +39,7 @@ a
 p
 {
     -webkit-margin-before: .3em;
-    -webkit-margin-after: .3em;
+    -webkit-margin-after: .7em;
 }
 .clearfix::after,
 .clearfix::before
@@ -308,7 +308,7 @@ p
 @media screen and (min-width: 560px)
 {
     /* iPhone 5 landscape – width: 568px */
-    $footerHeight: 18%;
+    $footerHeight: 20%;
     $wrapperHeight: (100% - $footerHeight);
     .wrapper
     {
@@ -359,6 +359,12 @@ and (-webkit-min-device-pixel-ratio: 2)
 {
     /* IPhone 5 ONLY landscape */
 
+    body
+    {
+        display: flex;
+
+        align-items: center;
+    }
     .container
     {
         width: 568px;
