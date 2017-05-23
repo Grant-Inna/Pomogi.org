@@ -303,9 +303,9 @@ p {
     width: 90%;
   }
 
-  .main__thanks {
+  /*.main__thanks {
     display: none;
-  }
+  }*/
 }
 
 @media screen and (min-width: 410px) {
