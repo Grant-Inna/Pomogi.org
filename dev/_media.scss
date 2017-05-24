@@ -126,9 +126,11 @@ and (orientation : landscape)
   }
   .container
   {
-    /*margin-top: 50px;*/
     width: 568px;
     height: 230px;
+  }
+  .main__slogan-h {
+    line-height: 20px;
   }
 }
 
