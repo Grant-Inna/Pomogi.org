@@ -92,6 +92,7 @@ $heightMainInfo_iPad: 450px;
   .button
   {
     height: 80px;
+    margin-bottom: 10px;
     background: $colorBlueBG;
   }
   .button__btn
@@ -128,9 +129,6 @@ and (orientation : landscape)
     /*margin-top: 50px;*/
     width: 568px;
     height: 230px;
-  }
-  .main__slogan-h {
-    line-height: 20px;
   }
 }
 
