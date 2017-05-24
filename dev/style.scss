@@ -4,6 +4,13 @@ $wrapperHeight: (100% - $footerHeight);
 
 $totalsImgHeight: auto;
 
+$colorBlue: #016990;
+$colorHeader: rgba(232, 236, 235, .8);
+$colorFooter: rgba(1, 105, 144, .7);
+$colorMain: #efeeee;
+$colorWhiteBG: rgba(239, 238, 238, .6);
+$colorBlueBG: rgba(1, 105, 144, .1);
+
 
 *
 {
@@ -29,7 +36,7 @@ body
 {
     font-size: 1rem;
 
-    color: #fff;
+    color: $colorMain;
 }
 
 a
@@ -61,7 +68,8 @@ p
     width: 100%;
     height: 100%;
 
-    background: white url(../img/bg.gif) repeat-x;
+    background: white url(../img/bg_tiny.jpg) center no-repeat;
+    background-size: cover;
 }
 .wrapper
 {
@@ -85,7 +93,7 @@ p
 
     height: 20%;
 
-    background: rgba(255, 255, 255, .7);
+    background: $colorHeader;
     box-shadow: 2px 5px 9px 2px rgba(0, 0, 0, .12);
 
     align-items: center;
@@ -97,7 +105,7 @@ p
     width: 40%;
     height: 90%;
 
-    background: url('../img/logo.gif') left no-repeat;
+    background: url('../img/logo.png') left no-repeat;
     background-size: contain;
 }
 .header__img
@@ -110,7 +118,7 @@ p
 
     text-align: right;
 
-    color: rgb(246, 146, 0);
+    color: $colorBlue;
 }
 .header__title-h
 {
@@ -135,18 +143,19 @@ p
 
 .main__slogan
 {
-    width: 98%;
+    width: 94%;
+    margin: 0 auto;
 
     text-align: center;
 }
 
 .main__slogan-h
 {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 30px;
 
     margin: .3em;
-
-    color: #fff;
 }
 
 .main__info
@@ -206,9 +215,8 @@ p
 }
 .main__thanks-h
 {
-    font-size: 1.8rem;
-
-    color: #2b2b2b;
+    font-size: 1.7rem;
+    font-weight: 100;
 
     -webkit-margin-before: .3em;
     -webkit-margin-after: .3em;
@@ -226,6 +234,8 @@ p
 
     text-align: center;
 
+    background: $colorBlueBG;
+
     justify-content: center;
     align-items: center;
 }
@@ -239,18 +249,18 @@ p
     cursor: pointer;
     text-transform: uppercase;
 
-    color: #fff;
-    border: none;
-    border-radius: 8px;
+    color: $colorMain;
+    border: 3px solid $colorMain;
+    border-radius: 50px;
     outline: none;
-    background-color: #f7ab38;
+    background-color: transparent;
 }
 .button__price
 {
     font-size: 16px;
     line-height: 15px;
 
-    color: #2b2b2b;
+    color: $colorMain;
 
     -webkit-margin-before: .3em;
     -webkit-margin-after: .3em;
@@ -269,8 +279,7 @@ p
 
     text-align: center;
 
-    color: #fff;
-    background: #9ab9e0;
+    background: $colorFooter;
 
     justify-content: center;
 }
