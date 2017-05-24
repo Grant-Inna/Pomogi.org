@@ -442,7 +442,7 @@ p {
   }
 
   .button {
-    height: 90px;
+    height: 80px;
     margin-bottom: 10px;
     background: rgba(1, 105, 144, 0.1);
   }
@@ -552,6 +552,7 @@ p {
 
   .button {
     background: rgba(1, 105, 144, 0.4);
+    height: 100px;
   }
 
   .button {

@@ -91,7 +91,7 @@ $heightMainInfo_iPad: 450px;
   }
   .button
   {
-    height: 90px;
+    height: 80px;
     margin-bottom: 10px;
     background: $colorBlueBG;
   }
@@ -297,6 +297,8 @@ and (-webkit-min-device-pixel-ratio : 2)
   }
   .button {
     background: $colorDarkerBlueBG;
+    height: 100px;
+
   }
   .button
   {
