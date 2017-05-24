@@ -2,15 +2,20 @@ $footerHeight: 18%;
 $wrapperHeight: (100% - $footerHeight);
 
 
-$totalsImgHeight: auto;
+$totalsImgHeight: 50%;
 
 $colorBlue: #016990;
+$colorDarkBlue: $colorBlue - 20;
+$colorVeryDarkBlue: $colorBlue - 60;
 $colorHeader: rgba(255, 255, 255, .85);
 $colorFooter: rgba(1, 105, 144, .7);
 $colorMain: #efeeee;
 $colorWhiteBG: rgba(239, 238, 238, .6);
 $colorBlueBG: rgba(1, 105, 144, .1);
+$colorBlack: #2b2b2b;
+$colorDarkerBlueBG: rgba(1, 105, 144, .5);
 
+$timeTransition: 5s;
 
 *
 {
@@ -46,6 +51,7 @@ a
 p
 {
     -webkit-margin-before: .3em;
+    -webkit-margin-after: .5em;
 }
 .clearfix::after,
 .clearfix::before
@@ -174,24 +180,61 @@ p
 
     width: 45%;
     height: $totalsImgHeight;
+    padding: 5px;
 
-    border: 1px solid #fff7f0;
+    border: 1px solid $colorBlueBG;
     border-radius: 6px;
-    background: #fff;
+    background: $colorWhiteBG;
 }
-.main__totals-img
+.main__totals-text
 {
-    width: 100%;
-    height: 536px;
+    font-size: 1.2rem;
 
-    background: url('../img/infoImg.jpg') top no-repeat;
-    background-size: contain;
+    color: $colorBlack;
 }
+.main__totals-count,
+.main__totals-info
+{
+    text-align: center;
+}
+.main__totals-p
+{
+    -webkit-margin-after: .3em;
+}
+.main__totals-list
+{
+    -webkit-margin-before: .4em;
+    -webkit-margin-after: .4em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 30px;
+    -webkit-padding-end: 20px;
+}
+.main__totals-item
+{
+    list-style-type: none;
+}
+.main__totals-item:before
+{
+    padding-right: 10px;
+
+    content: '• ';
+
+    color: $colorDarkBlue;
+}
+.main__totals-strong
+{
+    color: $colorDarkBlue;
+}
+
 .main__totals-h
 {
     text-align: center;
 
-    color: #2b2b2b;
+    color: $colorVeryDarkBlue;
+
+    -webkit-margin-before: .5em;
+    -webkit-margin-after: .5em;
 }
 .main__about
 {
@@ -201,10 +244,10 @@ p
 
     text-align: justify;
 
-    color: #2b2b2b;
-    border: 1px solid #fff7f0;
+    color: $colorBlack;
+    border: 1px solid $colorBlueBG;
     border-radius: 6px;
-    background: #fff;
+    background: $colorWhiteBG;
 }
 .main__thanks
 {
@@ -254,6 +297,12 @@ p
     border-radius: 50px;
     outline: none;
     background-color: transparent;
+    box-shadow: 0 0 9px $colorDarkerBlueBG;
+    text-shadow: 0 0 12px $colorBlue;
+}
+.button__btn:hover
+{
+    box-shadow: inset 0 0 9px $colorDarkerBlueBG;
 }
 .button__price
 {

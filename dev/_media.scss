@@ -1,5 +1,7 @@
+$heightMainInfo_iPad: 450px;
 
-@media screen and (min-width: 370px)
+
+@media (min-width: 370px)
 {
   /* iPhone 6 portrait – width: 375px */
   $footerHeight: 14%;
@@ -16,20 +18,23 @@
   {
     display: flex;
 
-    height: 60%;
   }
   .main__about {
     display: none;
   }
   .main__totals {
     width: 90%;
+    height: 250px;
   }
-  /*.main__thanks {
+  .main__thanks {
     display: none;
-  }*/
+  }
+  .button {
+    margin-bottom: 0;
+  }
 }
 
-@media screen and (min-width: 475px)
+@media (min-width: 475px)
 {
   /* iPhone 5 landscape – width: 568px */
   $footerHeight: 20%;
@@ -81,7 +86,7 @@ and (-webkit-min-device-pixel-ratio: 2)
 and (orientation : portrait)
 {
   .button {
-    margin-bottom: 30px;
+    margin-bottom: 55px;
   }
 
 }
@@ -107,11 +112,15 @@ and (orientation : landscape)
   }
 }
 
-@media screen and (min-width: 410px)
+@media (min-width: 410px)
 {
   /* iPhone 6 Plump portrait – width: 414px */
   $footerHeight: 10%;
   $wrapperHeight: (100% - $footerHeight);
+  .container {
+    background: white url(../img/bg.jpg) 80% no-repeat;
+    background-size: cover;
+  }
   .wrapper
   {
     height: $wrapperHeight;
@@ -133,8 +142,12 @@ and (orientation : landscape)
 
     height: 55%;
   }
+  .button {
+    margin-bottom: 90px;
+    background: $colorDarkerBlueBG;
+  }
 }
-@media screen and (min-width: 660px)
+@media (min-width: 660px)
 {
   /* iPhone 6 landscape – width: 667px */
   $footerHeight: 12%;
@@ -186,12 +199,12 @@ and (-webkit-min-device-pixel-ratio : 2)
 
 }
 
-@media screen and (min-width: 730px)
+@media (min-width: 730px)
 {
   /* iPhone 6 Plump landscape – width: 736px */
 
 }
-@media screen and (min-width: 760px)
+@media (min-width: 760px)
 {
   /* iPad portrait – width: 768px */
   $footerHeight: 6%;
@@ -222,13 +235,19 @@ and (-webkit-min-device-pixel-ratio : 2)
   {
     display: flex;
 
-    height: 65%;
+    height: $heightMainInfo_iPad;
   }
   .main__about {
     display: block;
+    height: $heightMainInfo_iPad;
+
   }
   .main__totals {
     width: 40%;
+    height: $heightMainInfo_iPad;
+  }
+  .main__totals-text {
+    font-size: 1.5rem;
   }
   .main__totals-h
   {
@@ -239,6 +258,9 @@ and (-webkit-min-device-pixel-ratio : 2)
   .main__topic
   {
     font-size: 1.5rem;
+  }
+  .main__topic a {
+    color: $colorDarkBlue;
   }
   .main__thanks {
     display: block;
@@ -258,7 +280,7 @@ and (-webkit-min-device-pixel-ratio : 2)
     height: $footerHeight;
   }
 }
-@media screen and (min-width: 1000px)
+@media (min-width: 1000px)
 {
   /* iPad landscape + iPad Pro portrait – width: 1024px */
   $footerHeight: 7%;
