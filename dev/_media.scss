@@ -6,6 +6,10 @@ $heightMainInfo_iPad: 450px;
   /* iPhone 6 portrait – width: 375px */
   $footerHeight: 14%;
   $wrapperHeight: (100% - $footerHeight);
+  .container {
+    background: url("../img/bg.jpg") 80% no-repeat;
+    background-size: cover;
+  }
   .wrapper
   {
     height: $wrapperHeight;
@@ -31,6 +35,20 @@ $heightMainInfo_iPad: 450px;
   }
   .button {
     margin-bottom: 0;
+  }
+  .button
+  {
+    background: $colorBlueBG;
+
+  }
+  .button__btn
+  {
+    box-shadow: 0 0 9px $colorDarkerBlueBG;
+    text-shadow: 0 0 12px $colorBlue;
+  }
+  .button__btn:hover
+  {
+    box-shadow: inset 0 0 9px $colorDarkerBlueBG;
   }
 }
 
@@ -74,6 +92,8 @@ $heightMainInfo_iPad: 450px;
   .button
   {
     height: 90px;
+    margin-bottom: 10px;
+    background: $colorBlueBG;
   }
   .button__btn
   {
@@ -169,6 +189,10 @@ and (orientation : landscape)
   {
     height: 30%;
   }
+  .button {
+    margin-bottom: 30px;
+    background: $colorBlueBG;
+  }
 }
 @media only screen
 and (min-device-width : 375px) // or 213.4375em or 3in or 9cm
@@ -209,6 +233,7 @@ and (-webkit-min-device-pixel-ratio : 2)
   /* iPad portrait – width: 768px */
   $footerHeight: 6%;
   $wrapperHeight: (100% - $footerHeight);
+  $heightMainInfo_iPad: 415px;
   .wrapper
   {
     height: $wrapperHeight;
@@ -262,8 +287,16 @@ and (-webkit-min-device-pixel-ratio : 2)
   .main__topic a {
     color: $colorDarkBlue;
   }
-  .main__thanks {
+  .main__thanks
+  {
     display: block;
+  }
+  .main__thanks-h {
+    font-size: 2.5rem;
+    text-shadow: 0 0 12px $colorBlue;
+  }
+  .button {
+    background: $colorDarkerBlueBG;
   }
   .button
   {
@@ -285,6 +318,7 @@ and (-webkit-min-device-pixel-ratio : 2)
   /* iPad landscape + iPad Pro portrait – width: 1024px */
   $footerHeight: 7%;
   $wrapperHeight: (100% - $footerHeight);
+  $heightMainInfo_iPad: 330px;
   .wrapper
   {
     height: $wrapperHeight;
@@ -305,16 +339,27 @@ and (-webkit-min-device-pixel-ratio : 2)
   }
   .main__info
   {
-    height: 80%;
+    height: $heightMainInfo_iPad;
+  }
+  .main__about,
+  .main__totals {
+    height: $heightMainInfo_iPad;
   }
   .main__about {
-    width: 60%;
+    width: 55%;
   }
   .main__totals {
-    width: 35%;
+    width: 40%;
   }
   .main__thanks
   {
-    display: none;
+    display: block;
+  }
+  .main__thanks-h {
+    -webkit-margin-before: 0;
+  }
+  .button {
+    background: $colorDarkerBlueBG;
+    margin-bottom: 0;
   }
 }
