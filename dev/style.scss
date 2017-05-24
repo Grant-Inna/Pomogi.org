@@ -246,13 +246,12 @@ p
     cursor: pointer;
     text-transform: uppercase;
 
-    color: $colorMain;
+    color: $colorBlue;
     border: 3px solid $colorMain;
     border-radius: 50px;
     outline: none;
     background-color: $colorWhiteBG;
-    box-shadow: 0 0 9px $colorDarkerBlueBG;
-    text-shadow: 0 0 12px $colorBlue;
+    box-shadow: 0 0 9px $colorDarkerBlueBG;;
 }
 .button__price
 {

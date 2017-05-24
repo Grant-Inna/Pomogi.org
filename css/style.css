@@ -225,14 +225,13 @@ p {
   height: 50%;
   cursor: pointer;
   text-transform: uppercase;
-  color: #efeeee;
+  color: #016990;
   border: 3px solid #efeeee;
   border-radius: 50px;
   outline: none;
   background-color: rgba(239, 238, 238, 0.6);
   -webkit-box-shadow: 0 0 9px rgba(1, 105, 144, 0.4);
           box-shadow: 0 0 9px rgba(1, 105, 144, 0.4);
-  text-shadow: 0 0 12px #016990;
 }
 
 .button__price {
