@@ -518,6 +518,10 @@ p {
 @media (min-width: 1000px) {
   /* iPad landscape � width: 1024px */
 
+  .header__title-h {
+    font-size: 3rem;
+  }
+
   .main__info {
     height: 250px;
   }

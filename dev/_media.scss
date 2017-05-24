@@ -316,6 +316,9 @@ and (-webkit-min-device-pixel-ratio : 2)
 @media (min-width: 1000px) {
   /* iPad landscape – width: 1024px */
   $heightMainInfo_iPad: 250px;
+  .header__title-h {
+    font-size: 3rem;
+  }
   .main__info {
     height: $heightMainInfo_iPad;
   }
