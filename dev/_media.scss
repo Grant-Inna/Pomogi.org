@@ -22,11 +22,10 @@ $heightMainInfo_iPad: 450px;
   {
     display: flex;
 
+    height: 250px;
+
   }
   .main__about {
-    display: none;
-  }
-  .main__totals {
     width: 90%;
     height: 250px;
   }
@@ -104,6 +103,7 @@ $heightMainInfo_iPad: 450px;
 and (device-width : 320px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation : portrait)
+  /* IPhone 5 ONLY (portrait) */
 {
   .button {
     margin-bottom: 55px;
@@ -115,8 +115,9 @@ and (orientation : portrait)
 and (device-width : 320px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation : landscape)
+  /* IPhone 5 ONLY (landscape) */
 {
-  /* IPhone 5 ONLY landscape */
+
 
   body
   {
@@ -161,11 +162,17 @@ and (orientation : landscape)
   .main__info
   {
     display: flex;
+  }
+  .main__topic {
+    font-size: 1.1rem;
+  }
+  .main__thanks {
+    display: block;
 
-    height: 55%;
+    -webkit-margin-before: 0;
   }
   .button {
-    margin-bottom: 90px;
+    margin-bottom: 50px;
     background: $colorDarkerBlueBG;
   }
 }
@@ -249,14 +256,10 @@ and (-webkit-min-device-pixel-ratio : 2)
 
     text-align: center;
   }
-  .hide
-  {
-    display: block;
-  }
   .main__slogan-h
   {
-    font-size: 2.3rem;
-    margin-bottom: 13px;
+    font-size: 3rem;
+    line-height: normal;
   }
   .main__info
   {
@@ -267,16 +270,8 @@ and (-webkit-min-device-pixel-ratio : 2)
   .main__about {
     display: block;
     height: $heightMainInfo_iPad;
-
   }
-  .main__totals {
-    width: 40%;
-    height: $heightMainInfo_iPad;
-  }
-  .main__totals-text {
-    font-size: 1.5rem;
-  }
-  .main__totals-h
+  .main__about-h
   {
     margin: 5px auto;
 
@@ -284,11 +279,9 @@ and (-webkit-min-device-pixel-ratio : 2)
   }
   .main__topic
   {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
-  .main__topic a {
-    color: $colorDarkBlue;
-  }
+
   .main__thanks
   {
     display: block;
@@ -309,6 +302,9 @@ and (-webkit-min-device-pixel-ratio : 2)
   {
     font-size: 3.5rem;
   }
+  .button__price {
+    font-size: 20px;
+  }
   .footer
   {
     line-height: 15px;
@@ -316,12 +312,29 @@ and (-webkit-min-device-pixel-ratio : 2)
     height: $footerHeight;
   }
 }
-@media (min-width: 1000px)
+
+@media (min-width: 1000px) {
+  /* iPad landscape – width: 1024px */
+  $heightMainInfo_iPad: 330px;
+  .main__info {
+    height: $heightMainInfo_iPad;
+  }
+  .main__about {
+    display: block;
+    height: $heightMainInfo_iPad;
+  }
+  .main__thanks-h {
+    -webkit-margin-before: 0;
+  }
+
+}
+
+@media (min-width: 1050px)
 {
-  /* iPad landscape + iPad Pro portrait – width: 1024px */
+  /* iPad Pro portrait – width: 1024px */
   $footerHeight: 7%;
   $wrapperHeight: (100% - $footerHeight);
-  $heightMainInfo_iPad: 330px;
+  $heightMainInfo_iPad: 450px;
   .wrapper
   {
     height: $wrapperHeight;
@@ -340,19 +353,21 @@ and (-webkit-min-device-pixel-ratio : 2)
 
     text-align: center;
   }
+  .main__slogan-h {
+    font-size: 5rem;
+    line-height: normal;
+  }
   .main__info
   {
     height: $heightMainInfo_iPad;
   }
-  .main__about,
-  .main__totals {
-    height: $heightMainInfo_iPad;
+  .main__topic {
+    font-size: 2.3rem;
   }
   .main__about {
-    width: 55%;
-  }
-  .main__totals {
-    width: 40%;
+    border-radius: 10px;
+    width: 90%;
+    height: $heightMainInfo_iPad;
   }
   .main__thanks
   {
@@ -362,7 +377,16 @@ and (-webkit-min-device-pixel-ratio : 2)
     -webkit-margin-before: 0;
   }
   .button {
+    height: 150px;
     background: $colorDarkerBlueBG;
     margin-bottom: 0;
   }
+  .button__btn {
+    font-size: 4.5rem;
+  }
+  .button__price {
+    font-size: 25px;
+    -webkit-margin-before: .5em;
+  }
+
 }

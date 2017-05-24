@@ -155,62 +155,7 @@ p {
           justify-content: space-around;
 }
 
-.main__totals {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 45%;
-  height: 50%;
-  padding: 5px;
-  border: 1px solid rgba(1, 105, 144, 0.1);
-  border-radius: 6px;
-  background: rgba(239, 238, 238, 0.6);
-}
-
-.main__totals-text {
-  font-size: 1.2rem;
-  color: #2b2b2b;
-}
-
-.main__totals-count,
-.main__totals-info {
-  text-align: center;
-}
-
-.main__totals-p {
-  -webkit-margin-after: .3em;
-}
-
-.main__totals-list {
-  -webkit-margin-before: .4em;
-  -webkit-margin-after: .4em;
-  -webkit-margin-start: 0;
-  -webkit-margin-end: 0;
-  -webkit-padding-start: 30px;
-  -webkit-padding-end: 20px;
-}
-
-.main__totals-item {
-  list-style-type: none;
-}
-
-.main__totals-item:before {
-  padding-right: 10px;
-  content: '• ';
-  color: #00557c;
-}
-
-.main__totals-strong {
-  color: #00557c;
-}
-
-.main__totals-h {
+.main__about-h {
   text-align: center;
   color: #002d54;
   -webkit-margin-before: .5em;
@@ -218,7 +163,7 @@ p {
 }
 
 .main__about {
-  width: 48%;
+  width: 80%;
   height: auto;
   padding: 5px;
   text-align: justify;
@@ -226,6 +171,15 @@ p {
   border: 1px solid rgba(1, 105, 144, 0.1);
   border-radius: 6px;
   background: rgba(239, 238, 238, 0.6);
+}
+
+.main__topic {
+  font-size: 1rem;
+  color: #2b2b2b;
+}
+
+.main__topic a {
+  color: #00557c;
 }
 
 .main__thanks {
@@ -237,8 +191,8 @@ p {
 .main__thanks-h {
   font-size: 1.7rem;
   font-weight: 100;
-  -webkit-margin-before: .3em;
-  -webkit-margin-after: .3em;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
 }
 
 /*                END OF MAIN INFO                       */
@@ -333,13 +287,10 @@ p {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    height: 250px;
   }
 
   .main__about {
-    display: none;
-  }
-
-  .main__totals {
     width: 90%;
     height: 250px;
   }
@@ -397,11 +348,19 @@ p {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    height: 55%;
+  }
+
+  .main__topic {
+    font-size: 1.1rem;
+  }
+
+  .main__thanks {
+    display: block;
+    -webkit-margin-before: 0;
   }
 
   .button {
-    margin-bottom: 90px;
+    margin-bottom: 50px;
     background: rgba(1, 105, 144, 0.4);
   }
 }
@@ -497,13 +456,9 @@ p {
     text-align: center;
   }
 
-  .hide {
-    display: block;
-  }
-
   .main__slogan-h {
-    font-size: 2.3rem;
-    margin-bottom: 13px;
+    font-size: 3rem;
+    line-height: normal;
   }
 
   .main__info {
@@ -519,26 +474,13 @@ p {
     height: 415px;
   }
 
-  .main__totals {
-    width: 40%;
-    height: 415px;
-  }
-
-  .main__totals-text {
-    font-size: 1.5rem;
-  }
-
-  .main__totals-h {
+  .main__about-h {
     margin: 5px auto;
     font-size: 2.3rem;
   }
 
   .main__topic {
-    font-size: 1.5rem;
-  }
-
-  .main__topic a {
-    color: #00557c;
+    font-size: 1.8rem;
   }
 
   .main__thanks {
@@ -563,6 +505,10 @@ p {
     font-size: 3.5rem;
   }
 
+  .button__price {
+    font-size: 20px;
+  }
+
   .footer {
     line-height: 15px;
     height: 6%;
@@ -570,7 +516,24 @@ p {
 }
 
 @media (min-width: 1000px) {
-  /* iPad landscape + iPad Pro portrait � width: 1024px */
+  /* iPad landscape � width: 1024px */
+
+  .main__info {
+    height: 330px;
+  }
+
+  .main__about {
+    display: block;
+    height: 330px;
+  }
+
+  .main__thanks-h {
+    -webkit-margin-before: 0;
+  }
+}
+
+@media (min-width: 1050px) {
+  /* iPad Pro portrait � width: 1024px */
 
   .wrapper {
     height: 93%;
@@ -589,21 +552,23 @@ p {
     text-align: center;
   }
 
-  .main__info {
-    height: 330px;
+  .main__slogan-h {
+    font-size: 5rem;
+    line-height: normal;
   }
 
-  .main__about,
-  .main__totals {
-    height: 330px;
+  .main__info {
+    height: 450px;
+  }
+
+  .main__topic {
+    font-size: 2.3rem;
   }
 
   .main__about {
-    width: 55%;
-  }
-
-  .main__totals {
-    width: 40%;
+    border-radius: 10px;
+    width: 90%;
+    height: 450px;
   }
 
   .main__thanks {
@@ -615,8 +580,18 @@ p {
   }
 
   .button {
+    height: 150px;
     background: rgba(1, 105, 144, 0.4);
     margin-bottom: 0;
+  }
+
+  .button__btn {
+    font-size: 4.5rem;
+  }
+
+  .button__price {
+    font-size: 25px;
+    -webkit-margin-before: .5em;
   }
 }
 
@@ -627,8 +602,6 @@ p {
 }
 
 @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  /* IPhone 5 ONLY landscape */
-
   body {
     display: -webkit-box;
     display: -webkit-flex;
