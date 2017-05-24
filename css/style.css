@@ -443,7 +443,6 @@ p {
 
   .button {
     height: 80px;
-    margin-bottom: 10px;
     background: rgba(1, 105, 144, 0.1);
   }
 
@@ -644,6 +643,10 @@ p {
     /*margin-top: 50px;*/
     width: 568px;
     height: 230px;
+  }
+
+  .main__slogan-h {
+    line-height: 20px;
   }
 }
 
