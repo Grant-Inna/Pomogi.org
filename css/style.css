@@ -607,7 +607,7 @@ p {
   }
 
   .main__thanks {
-    display: block;
+    display: none;
   }
 
   .main__thanks-h {

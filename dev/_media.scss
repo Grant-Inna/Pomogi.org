@@ -298,7 +298,6 @@ and (-webkit-min-device-pixel-ratio : 2)
   .button {
     background: $colorDarkerBlueBG;
     height: 100px;
-
   }
   .button
   {
@@ -355,7 +354,7 @@ and (-webkit-min-device-pixel-ratio : 2)
   }
   .main__thanks
   {
-    display: block;
+    display: none;
   }
   .main__thanks-h {
     -webkit-margin-before: 0;
