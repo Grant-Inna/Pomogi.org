@@ -315,13 +315,16 @@ and (-webkit-min-device-pixel-ratio : 2)
 
 @media (min-width: 1000px) {
   /* iPad landscape – width: 1024px */
-  $heightMainInfo_iPad: 330px;
+  $heightMainInfo_iPad: 250px;
   .main__info {
     height: $heightMainInfo_iPad;
   }
   .main__about {
     display: block;
     height: $heightMainInfo_iPad;
+  }
+  .main__topic {
+    font-size: 1.5rem;
   }
   .main__thanks-h {
     -webkit-margin-before: 0;

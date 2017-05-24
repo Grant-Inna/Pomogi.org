@@ -519,12 +519,16 @@ p {
   /* iPad landscape � width: 1024px */
 
   .main__info {
-    height: 330px;
+    height: 250px;
   }
 
   .main__about {
     display: block;
-    height: 330px;
+    height: 250px;
+  }
+
+  .main__topic {
+    font-size: 1.5rem;
   }
 
   .main__thanks-h {
