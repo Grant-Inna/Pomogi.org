@@ -250,7 +250,9 @@ p
     border: 3px solid $colorMain;
     border-radius: 50px;
     outline: none;
-    background-color: transparent;
+    background-color: $colorWhiteBG;
+    box-shadow: 0 0 9px $colorDarkerBlueBG;
+    text-shadow: 0 0 12px $colorBlue;
 }
 .button__price
 {
