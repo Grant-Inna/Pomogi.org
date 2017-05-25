@@ -381,7 +381,6 @@ p {
   }
 
   .button {
-    background: rgba(1, 105, 144, 0.4);
     height: 100px;
   }
 
@@ -438,7 +437,6 @@ p {
 
   .button {
     height: 150px;
-    background: rgba(1, 105, 144, 0.4);
     margin-bottom: 0;
   }
 
