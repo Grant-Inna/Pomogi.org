@@ -333,9 +333,9 @@ and (-webkit-min-device-pixel-ratio : 2)
 @media (min-width: 1050px)
 {
   /* iPad Pro portrait – width: 1024px */
-  $footerHeight: 7%;
+  $footerHeight: 4%;
   $wrapperHeight: (100% - $footerHeight);
-  $heightMainInfo_iPad: 450px;
+  $heightMainInfo_iPad: 335px;
   .wrapper
   {
     height: $wrapperHeight;
@@ -355,7 +355,7 @@ and (-webkit-min-device-pixel-ratio : 2)
     text-align: center;
   }
   .main__slogan-h {
-    font-size: 5rem;
+    font-size: 3.2rem;
     line-height: normal;
   }
   .main__info
@@ -363,7 +363,7 @@ and (-webkit-min-device-pixel-ratio : 2)
     height: $heightMainInfo_iPad;
   }
   .main__topic {
-    font-size: 2.3rem;
+    font-size: 1.9rem;
   }
   .main__about {
     border-radius: 10px;

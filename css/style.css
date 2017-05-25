@@ -540,11 +540,11 @@ p {
   /* iPad Pro portrait � width: 1024px */
 
   .wrapper {
-    height: 93%;
+    height: 96%;
   }
 
   .footer {
-    height: 7%;
+    height: 4%;
   }
 
   .header {
@@ -557,22 +557,22 @@ p {
   }
 
   .main__slogan-h {
-    font-size: 5rem;
+    font-size: 3.2rem;
     line-height: normal;
   }
 
   .main__info {
-    height: 450px;
+    height: 335px;
   }
 
   .main__topic {
-    font-size: 2.3rem;
+    font-size: 1.9rem;
   }
 
   .main__about {
     border-radius: 10px;
     width: 90%;
-    height: 450px;
+    height: 335px;
   }
 
   .main__thanks {
