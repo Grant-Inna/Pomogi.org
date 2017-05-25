@@ -19,16 +19,8 @@
     font-size: 3rem;
     line-height: 35px;
   }
-  .main__thanks {
-    display: none;
-  }
   .button {
     margin-bottom: 0;
-  }
-  .button
-  {
-    background: $colorBlueBG;
-
   }
   .button__btn:hover
   {
@@ -64,10 +56,6 @@
   .main__slogan-h {
     font-size: 2rem;
     line-height: 25px;
-  }
-  .main__thanks
-  {
-    display: none;
   }
   .header__title
   {
@@ -144,14 +132,8 @@ and (orientation : landscape)
   .main {
     height: 100%;
   }
-  .main__thanks {
-    display: block;
-
-    -webkit-margin-before: 0;
-  }
   .button {
     margin-bottom: 50px;
-    background: $colorDarkerBlueBG;
   }
 }
 @media (min-width: 660px)
@@ -166,11 +148,6 @@ and (orientation : landscape)
   .footer
   {
     height: $footerHeight;
-  }
-
-  .main__thanks
-  {
-    display: block;
   }
   .header
   {
@@ -238,14 +215,6 @@ and (-webkit-min-device-pixel-ratio : 2)
     font-size: 5rem;
     line-height: normal;
   }
-  .main__thanks
-  {
-    display: block;
-  }
-  .main__thanks-h {
-    font-size: 2.5rem;
-    text-shadow: 0 0 12px $colorBlue;
-  }
   .button {
     background: $colorDarkerBlueBG;
     height: 100px;
@@ -274,10 +243,6 @@ and (-webkit-min-device-pixel-ratio : 2)
   .header__title-h {
     font-size: 3rem;
   }
-  .main__thanks-h {
-    -webkit-margin-before: 0;
-  }
-
 }
 
 @media (min-width: 1050px)
@@ -306,13 +271,6 @@ and (-webkit-min-device-pixel-ratio : 2)
   .main__slogan-h {
     font-size: 5.2rem;
     line-height: normal;
-  }
-  .main__thanks
-  {
-    display: none;
-  }
-  .main__thanks-h {
-    -webkit-margin-before: 0;
   }
   .button {
     height: 150px;

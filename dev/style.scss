@@ -177,21 +177,6 @@ p
     border-radius: 6px;
     background: $colorWhiteBG;
 }
-.main__thanks
-{
-    width: auto;
-    height: 20px;
-
-    text-align: center;
-}
-.main__thanks-h
-{
-    font-size: 1.7rem;
-    font-weight: 100;
-
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-}
 
 
 /*                END OF MAIN INFO                       */
@@ -230,8 +215,7 @@ p
     font-size: 18px;
     line-height: 15px;
 
-    color: $colorOrange;
-    text-shadow: 0 0 10px $colorBlack;
+    color: $colorVeryDarkBlue;
 
     -webkit-margin-before: .3em;
     -webkit-margin-after: 0;

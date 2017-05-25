@@ -158,19 +158,6 @@ p {
   background: rgba(239, 238, 238, 0.6);
 }
 
-.main__thanks {
-  width: auto;
-  height: 20px;
-  text-align: center;
-}
-
-.main__thanks-h {
-  font-size: 1.7rem;
-  font-weight: 100;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-}
-
 /*                END OF MAIN INFO                       */
 
 .button {
@@ -213,8 +200,7 @@ p {
 .button__price {
   font-size: 18px;
   line-height: 15px;
-  color: #f90;
-  text-shadow: 0 0 10px #2b2b2b;
+  color: #002d54;
   -webkit-margin-before: .3em;
   -webkit-margin-after: 0;
 }
@@ -266,16 +252,8 @@ p {
     line-height: 35px;
   }
 
-  .main__thanks {
-    display: none;
-  }
-
   .button {
     margin-bottom: 0;
-  }
-
-  .button {
-    background: rgba(1, 105, 144, 0.1);
   }
 
   .button__btn:hover {
@@ -308,14 +286,8 @@ p {
     height: 100%;
   }
 
-  .main__thanks {
-    display: block;
-    -webkit-margin-before: 0;
-  }
-
   .button {
     margin-bottom: 50px;
-    background: rgba(1, 105, 144, 0.4);
   }
 }
 
@@ -347,10 +319,6 @@ p {
     line-height: 25px;
   }
 
-  .main__thanks {
-    display: none;
-  }
-
   .header__title {
     width: 55%;
   }
@@ -375,10 +343,6 @@ p {
 
   .footer {
     height: 12%;
-  }
-
-  .main__thanks {
-    display: block;
   }
 
   .header {
@@ -416,15 +380,6 @@ p {
     line-height: normal;
   }
 
-  .main__thanks {
-    display: block;
-  }
-
-  .main__thanks-h {
-    font-size: 2.5rem;
-    text-shadow: 0 0 12px #016990;
-  }
-
   .button {
     background: rgba(1, 105, 144, 0.4);
     height: 100px;
@@ -454,10 +409,6 @@ p {
   .header__title-h {
     font-size: 3rem;
   }
-
-  .main__thanks-h {
-    -webkit-margin-before: 0;
-  }
 }
 
 @media (min-width: 1050px) {
@@ -483,14 +434,6 @@ p {
   .main__slogan-h {
     font-size: 5.2rem;
     line-height: normal;
-  }
-
-  .main__thanks {
-    display: none;
-  }
-
-  .main__thanks-h {
-    -webkit-margin-before: 0;
   }
 
   .button {
