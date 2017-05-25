@@ -3,7 +3,7 @@ $heightMainInfo_iPad: 450px;
 
 @media (min-width: 370px)
 {
-  /* iPhone 6 portrait – width: 375px */
+  /* iPhone 6 portrait â€“ width: 375px */
   $footerHeight: 14%;
   $wrapperHeight: (100% - $footerHeight);
   .container {
@@ -48,7 +48,7 @@ $heightMainInfo_iPad: 450px;
 
 @media (min-width: 475px)
 {
-  /* iPhone 5 landscape – width: 568px */
+  /* iPhone 5 landscape â€“ width: 568px */
   $footerHeight: 20%;
   $wrapperHeight: (100% - $footerHeight);
   .wrapper
@@ -132,7 +132,7 @@ and (orientation : landscape)
 
 @media (min-width: 410px)
 {
-  /* iPhone 6 Plump portrait – width: 414px */
+  /* iPhone 6 Plump portrait â€“ width: 414px */
   $footerHeight: 10%;
   $wrapperHeight: (100% - $footerHeight);
   .container {
@@ -173,7 +173,7 @@ and (orientation : landscape)
 }
 @media (min-width: 660px)
 {
-  /* iPhone 6 landscape – width: 667px */
+  /* iPhone 6 landscape â€“ width: 667px */
   $footerHeight: 12%;
   $wrapperHeight: (100% - $footerHeight);
   .wrapper
@@ -229,12 +229,12 @@ and (-webkit-min-device-pixel-ratio : 2)
 
 @media (min-width: 730px)
 {
-  /* iPhone 6 Plump landscape – width: 736px */
+  /* iPhone 6 Plump landscape â€“ width: 736px */
 
 }
 @media (min-width: 760px)
 {
-  /* iPad portrait – width: 768px */
+  /* iPad portrait â€“ width: 768px */
   $footerHeight: 6%;
   $wrapperHeight: (100% - $footerHeight);
   $heightMainInfo_iPad: 415px;
@@ -309,7 +309,7 @@ and (-webkit-min-device-pixel-ratio : 2)
 }
 
 @media (min-width: 1000px) {
-  /* iPad landscape – width: 1024px */
+  /* iPad landscape â€“ width: 1024px */
   $heightMainInfo_iPad: 250px;
   .header__title-h {
     font-size: 3rem;
@@ -332,7 +332,7 @@ and (-webkit-min-device-pixel-ratio : 2)
 
 @media (min-width: 1050px)
 {
-  /* iPad Pro portrait – width: 1024px */
+  /* iPad Pro portrait â€“ width: 1024px */
   $footerHeight: 4%;
   $wrapperHeight: (100% - $footerHeight);
   $heightMainInfo_iPad: 335px;
