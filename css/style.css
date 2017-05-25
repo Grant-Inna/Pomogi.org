@@ -147,21 +147,6 @@ p {
   margin: .3em;
 }
 
-.main__info {
-  display: none;
-  width: 100%;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-}
-
-.main__about-h {
-  text-align: center;
-  color: #002d54;
-  -webkit-margin-before: .5em;
-  -webkit-margin-after: .5em;
-}
-
 .main__about {
   width: 80%;
   height: auto;
@@ -171,15 +156,6 @@ p {
   border: 1px solid rgba(1, 105, 144, 0.1);
   border-radius: 6px;
   background: rgba(239, 238, 238, 0.6);
-}
-
-.main__topic {
-  font-size: 1rem;
-  color: #2b2b2b;
-}
-
-.main__topic a {
-  color: #00557c;
 }
 
 .main__thanks {
@@ -235,9 +211,10 @@ p {
 }
 
 .button__price {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 15px;
-  color: #efeeee;
+  color: #f90;
+  text-shadow: 0 0 10px #2b2b2b;
   -webkit-margin-before: .3em;
   -webkit-margin-after: 0;
 }
@@ -284,17 +261,9 @@ p {
     height: 14%;
   }
 
-  .main__info {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 250px;
-  }
-
-  .main__about {
-    width: 90%;
-    height: 250px;
+  .main__slogan-h {
+    font-size: 3rem;
+    line-height: 35px;
   }
 
   .main__thanks {
@@ -339,17 +308,6 @@ p {
     height: 100%;
   }
 
-  .main__info {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .main__topic {
-    font-size: 1.1rem;
-  }
-
   .main__thanks {
     display: block;
     -webkit-margin-before: 0;
@@ -382,10 +340,6 @@ p {
 
   .main__slogan {
     width: 100%;
-  }
-
-  .main__info {
-    display: none;
   }
 
   .main__thanks {
@@ -453,30 +407,8 @@ p {
   }
 
   .main__slogan-h {
-    font-size: 3rem;
+    font-size: 5rem;
     line-height: normal;
-  }
-
-  .main__info {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 415px;
-  }
-
-  .main__about {
-    display: block;
-    height: 415px;
-  }
-
-  .main__about-h {
-    margin: 5px auto;
-    font-size: 2.3rem;
-  }
-
-  .main__topic {
-    font-size: 1.8rem;
   }
 
   .main__thanks {
@@ -518,19 +450,6 @@ p {
     font-size: 3rem;
   }
 
-  .main__info {
-    height: 250px;
-  }
-
-  .main__about {
-    display: block;
-    height: 250px;
-  }
-
-  .main__topic {
-    font-size: 1.5rem;
-  }
-
   .main__thanks-h {
     -webkit-margin-before: 0;
   }
@@ -557,22 +476,8 @@ p {
   }
 
   .main__slogan-h {
-    font-size: 3.2rem;
+    font-size: 5.2rem;
     line-height: normal;
-  }
-
-  .main__info {
-    height: 335px;
-  }
-
-  .main__topic {
-    font-size: 1.9rem;
-  }
-
-  .main__about {
-    border-radius: 10px;
-    width: 90%;
-    height: 335px;
   }
 
   .main__thanks {

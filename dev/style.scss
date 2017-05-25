@@ -14,6 +14,7 @@ $colorWhiteBG: rgba(239, 238, 238, .6);
 $colorBlueBG: rgba(1, 105, 144, .1);
 $colorBlack: #2b2b2b;
 $colorDarkerBlueBG: rgba(1, 105, 144, .4);
+$colorOrange: #f90;
 
 $timeTransition: 5s;
 
@@ -163,25 +164,6 @@ p
 
     margin: .3em;
 }
-
-.main__info
-{
-    display: none;
-
-    width: 100%;
-
-    justify-content: space-around;
-}
-
-.main__about-h
-{
-    text-align: center;
-
-    color: $colorVeryDarkBlue;
-
-    -webkit-margin-before: .5em;
-    -webkit-margin-after: .5em;
-}
 .main__about
 {
     width: 80%;
@@ -194,16 +176,6 @@ p
     border: 1px solid $colorBlueBG;
     border-radius: 6px;
     background: $colorWhiteBG;
-}
-.main__topic
-{
-    font-size: 1rem;
-
-    color: $colorBlack;
-}
-.main__topic a
-{
-    color: $colorDarkBlue;
 }
 .main__thanks
 {
@@ -255,10 +227,11 @@ p
 }
 .button__price
 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 15px;
 
-    color: $colorMain;
+    color: $colorOrange;
+    text-shadow: 0 0 10px $colorBlack;
 
     -webkit-margin-before: .3em;
     -webkit-margin-after: 0;
