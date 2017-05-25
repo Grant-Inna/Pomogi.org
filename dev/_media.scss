@@ -22,10 +22,6 @@
   .button {
     margin-bottom: 0;
   }
-  .button__btn:hover
-  {
-    box-shadow: inset 0 0 9px $colorDarkerBlueBG;
-  }
 }
 
 @media (min-width: 475px)
@@ -65,7 +61,6 @@
   {
     height: 80px;
     margin-bottom: 10px;
-    background: $colorBlueBG;
   }
   .button__btn
   {
@@ -155,7 +150,6 @@ and (orientation : landscape)
   }
   .button {
     margin-bottom: 30px;
-    background: $colorBlueBG;
   }
 }
 @media only screen

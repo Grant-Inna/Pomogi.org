@@ -210,6 +210,11 @@ p
     background-color: $colorWhiteBG;
     box-shadow: 0 0 9px $colorDarkerBlueBG;;
 }
+
+.button__btn:hover
+{
+    box-shadow: inset 0 0 9px $colorDarkerBlueBG;
+}
 .button__price
 {
     font-size: 18px;

@@ -197,6 +197,11 @@ p {
           box-shadow: 0 0 9px rgba(1, 105, 144, 0.4);
 }
 
+.button__btn:hover {
+  -webkit-box-shadow: inset 0 0 9px rgba(1, 105, 144, 0.4);
+          box-shadow: inset 0 0 9px rgba(1, 105, 144, 0.4);
+}
+
 .button__price {
   font-size: 18px;
   line-height: 15px;
@@ -254,11 +259,6 @@ p {
 
   .button {
     margin-bottom: 0;
-  }
-
-  .button__btn:hover {
-    -webkit-box-shadow: inset 0 0 9px rgba(1, 105, 144, 0.4);
-            box-shadow: inset 0 0 9px rgba(1, 105, 144, 0.4);
   }
 }
 
@@ -326,7 +326,6 @@ p {
   .button {
     height: 80px;
     margin-bottom: 10px;
-    background: rgba(1, 105, 144, 0.1);
   }
 
   .button__btn {
@@ -351,7 +350,6 @@ p {
 
   .button {
     margin-bottom: 30px;
-    background: rgba(1, 105, 144, 0.1);
   }
 }
 
